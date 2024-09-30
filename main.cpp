@@ -14,11 +14,14 @@ int secuencia_1;
 
 cout << "- Primera Secuencia: ";
 
-for (secuencia_1 = 11 ; secuencia_1 > -11; secuencia_1--){
+for (secuencia_1 = -10 ; secuencia_1 <= 10; secuencia_1++){
 
   if (secuencia_1 % 2 == 0){ //Verificar si numero es par
 
-  cout << secuencia_1 << ", ";
+  cout << secuencia_1;
+  
+  if (secuencia_1 < 10)
+  cout << ", ";
 
   }
 }
