@@ -43,7 +43,6 @@ for (secuencia_2 = -1; secuencia_2 <= 22; ++secuencia_2){
   if (secuencia_2 < 22) //Separar secuencia con comas ','
     cout << ", ";
 
-  
 }
 
 cout << endl; //Para mantener secuencia en una sola linea
@@ -54,28 +53,45 @@ int secuencia_3, exponente = 0;
 
 cout << "3. ";
 
-for (secuencia_3; secuencia_3 <= 81; secuencia_3++){
+for (secuencia_3 = 1; secuencia_3 <= 81; secuencia_3++){
 
   if(secuencia_3 <= 81){
 
-    secuencia_3 = pow(3, exponente);
+    secuencia_3 = pow(3, exponente); //Calcular exponentes con base de 3
   
-    exponente++;
+    exponente++; //Incrementar exponentes
 
     cout << secuencia_3; //Desplegar tercera secuencia
 
   if (secuencia_3 < 81) //Separar secuencia con comas ','
     cout << ", ";
   }
+  
 }
 
 cout << endl; //Para mantener secuencia en una sola linea
 
 //Cuarta secuencia
 
-int secuencia_4
+int secuencia_4;
 
+cout << "4. ";
 
+for (secuencia_4 = 1; secuencia_4 <= 14; secuencia_4++){
+  
+  if (secuencia_4 % 3 == 0){
+    cout << "\b\b";
+  }
+  else{
+    cout << secuencia_4;
+  }
+
+  if (secuencia_4 < 14) //Separar secuencia con comas ','
+    cout << ", ";
+
+}
+
+cout << endl; //Para mantener secuencia en una sola linea
 
 return 0;
 }
