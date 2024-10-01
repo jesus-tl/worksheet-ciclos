@@ -9,7 +9,7 @@ int main(){
 
 //Primera Secuencia
 
-int secuencia_1;
+int secuencia_1; //Declarar variable
 
 cout << "1. ";
 
@@ -22,14 +22,18 @@ for (secuencia_1 = 10; secuencia_1 >= -10; secuencia_1--){
   if (secuencia_1 > -10) //Separar secuencia con comas ','
     cout << ", ";
   }
-
 }
 
 cout << endl; //Para mantener secuencia en una sola linea
 
+
+
+
+
+
 //Segunda Secuencia 
 
-int secuencia_2;
+int secuencia_2; //Declarar variable
 
 cout << "2. ";
 
@@ -47,9 +51,14 @@ for (secuencia_2 = -1; secuencia_2 <= 22; ++secuencia_2){
 
 cout << endl; //Para mantener secuencia en una sola linea
 
+
+
+
+
+
 //Tercera Secuencia 
 
-int secuencia_3, exponente = 0;
+int secuencia_3, exponente = 0; //Declarar variable //Inicializar variable exponente
 
 cout << "3. ";
 
@@ -66,14 +75,17 @@ for (secuencia_3 = 1; secuencia_3 <= 81; secuencia_3++){
   if (secuencia_3 < 81) //Separar secuencia con comas ','
     cout << ", ";
   }
-  
 }
-
 cout << endl; //Para mantener secuencia en una sola linea
 
-//Cuarta secuencia
 
-int secuencia_4;
+
+
+
+
+//Cuarta secuencia 
+
+int secuencia_4; //Declarar variable
 
 cout << "4. ";
 
@@ -89,14 +101,17 @@ for (secuencia_4 = 0; secuencia_4 <= 14; secuencia_4++){
 
   if (secuencia_4 < 14) //Separar secuencia con comas ','
     cout << ", ";
-
 }
-
 cout << endl; //Para mantener secuencia en una sola linea
+
+
+
+
+
 
 //Quinta Secuencia
 
-int secuencia_5;
+int secuencia_5; //Declarar variable
 
 cout << "5. ";
 
@@ -119,10 +134,39 @@ for (secuencia_5 = 54; secuencia_5 >= 0; secuencia_5--) {
     cout << ", ";
   }
 }
-
 cout << endl; //Para mantener secuencia en una sola linea
 
-//Sexta S
+
+
+
+
+
+//Sexta Secuencia
+
+char secuencia_6; //Declarar variable
+
+cout << "6. ";
+
+for (secuencia_6 = 65; secuencia_6 < 91; secuencia_6++){
+
+  if (secuencia_6 > 69 && secuencia_6 < 88){ //Eliminar letras E a W
+    cout << "\b\b";
+  }
+
+  else if (secuencia_6 == 69){ //Insertar '...'
+    cout << "...";
+  }
+  else{ //Desplegar A, B, C, D, X, Y, Z
+    cout << secuencia_6;
+  }
+
+  if (secuencia_6 < 90){ //Separar secuencia con comas ','
+    cout << ", ";
+  }
+
+}
+
+cout << endl; //Para mantener secuencia en una sola linea
 
 return 0;
 }
