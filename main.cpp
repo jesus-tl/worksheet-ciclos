@@ -77,13 +77,14 @@ int secuencia_4;
 
 cout << "4. ";
 
-for (secuencia_4 = 1; secuencia_4 <= 14; secuencia_4++){
+for (secuencia_4 = 0; secuencia_4 <= 14; secuencia_4++){
   
-  if (secuencia_4 % 3 == 0){
+  //Excluir 3, 6, 9 y 12
+  if (secuencia_4 == 3 || secuencia_4 == 6 || secuencia_4 == 9 || secuencia_4 == 12){
     cout << "\b\b";
   }
   else{
-    cout << secuencia_4;
+    cout << secuencia_4; //Desplegar el resto de la secuencia
   }
 
   if (secuencia_4 < 14) //Separar secuencia con comas ','
