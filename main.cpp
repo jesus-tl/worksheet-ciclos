@@ -163,7 +163,6 @@ for (secuencia_6 = 65; secuencia_6 < 91; secuencia_6++){
   if (secuencia_6 < 90){ //Separar secuencia con comas ','
     cout << ", ";
   }
-
 }
 
 cout << endl; //Para mantener secuencia en una sola linea
