@@ -94,5 +94,35 @@ for (secuencia_4 = 0; secuencia_4 <= 14; secuencia_4++){
 
 cout << endl; //Para mantener secuencia en una sola linea
 
+//Quinta Secuencia
+
+int secuencia_5;
+
+cout << "5. ";
+
+for (secuencia_5 = 54; secuencia_5 >= 0; secuencia_5--) {
+  
+  if (secuencia_5 == 54){ //Desplegar el 54
+    cout << secuencia_5;
+  }
+
+  else if (secuencia_5 < 54 && secuencia_5 > 1){
+    secuencia_5 = secuencia_5 / 2; // Sumar 1 a resto de la secuencia
+    cout << secuencia_5 + 1;
+  }
+
+  else{
+    cout << secuencia_5; //Desplegar el 0
+  }
+
+  if (secuencia_5 > 0){ //Separar secuencia con comas ','
+    cout << ", ";
+  }
+}
+
+cout << endl; //Para mantener secuencia en una sola linea
+
+//Sexta S
+
 return 0;
 }
